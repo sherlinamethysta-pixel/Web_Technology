@@ -1,0 +1,1041 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Industrial Automation Solutions</title>
+
+    <link rel="stylesheet" href="css15.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>INDUSTRIAL AUTOMATION SOLUTIONS</h1>
+        <p>Smart Technologies for Modern Industries</p>
+        <p>PLC | Robotics | Industrial IoT | SCADA</p>
+    </header>
+
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar">
+
+        <div class="logo">
+            <h2>INDUSTRIA</h2>
+        </div>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#technologies">Technologies</a>
+            <a href="#process">Process</a>
+            <a href="#products">Products</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#media">Multimedia</a>
+            <a href="#enquiry">Enquiry</a>
+        </div>
+
+    </nav>
+
+    <main>
+
+        <!-- HOME SECTION -->
+        <section id="home">
+
+            <h2>Welcome to Industrial Automation</h2>
+
+            <p>
+                Industrial automation uses advanced technologies to control
+                industrial machines and manufacturing processes with minimum
+                human intervention. Our company provides innovative automation
+                solutions to improve productivity, accuracy and safety.
+            </p>
+
+            <figure>
+                <img src="automation.jpg"
+                     alt="Automated industrial factory with robotic machines">
+
+                <figcaption>
+                    Modern Industrial Automation Factory
+                </figcaption>
+            </figure>
+
+        </section>
+
+        <!-- SERVICES SECTION -->
+        <section id="services">
+
+            <h2>Our Automation Services</h2>
+
+            <div class="container">
+
+                <article class="card">
+                    <h3>PLC Automation</h3>
+
+                    <p>
+                        We provide PLC programming, installation and
+                        maintenance services for industrial machines.
+                    </p>
+
+                    <ul>
+                        <li>PLC Programming</li>
+                        <li>Machine Control Systems</li>
+                        <li>Fault Detection</li>
+                        <li>System Maintenance</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <h3>Robotics Automation</h3>
+
+                    <p>
+                        Industrial robots perform repetitive tasks
+                        with high accuracy and efficiency.
+                    </p>
+
+                    <ul>
+                        <li>Robot Installation</li>
+                        <li>Pick and Place Operations</li>
+                        <li>Welding Automation</li>
+                        <li>Material Handling</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <h3>Industrial IoT</h3>
+
+                    <p>
+                        Industrial IoT connects machines and sensors
+                        to monitor and control industrial operations.
+                    </p>
+
+                    <ul>
+                        <li>Real-Time Monitoring</li>
+                        <li>Remote Machine Control</li>
+                        <li>Data Collection</li>
+                        <li>Predictive Maintenance</li>
+                    </ul>
+                </article>
+
+            </div>
+
+        </section>
+
+<section id="task-manager">
+    <h2>Industrial Automation Task Manager</h2>
+
+    <p>Manage maintenance activities, equipment inspections,
+       PLC programming and industrial operations.</p>
+
+    <!-- Task Form -->
+    <form id="taskForm">
+        <h3 id="formHeading">Add New Task</h3>
+
+        <label for="taskTitle">Task Title:</label>
+        <input type="text" id="taskTitle"
+               placeholder="Enter task title" required>
+
+        <label for="taskDescription">Task Description:</label>
+        <textarea id="taskDescription"
+                  placeholder="Enter task description"
+                  required></textarea>
+
+        <label for="taskCategory">Task Category:</label>
+        <select id="taskCategory" required>
+            <option value="">Select Category</option>
+            <option value="Maintenance">Maintenance</option>
+            <option value="PLC Programming">PLC Programming</option>
+            <option value="Robotics">Robotics</option>
+            <option value="Quality Inspection">Quality Inspection</option>
+            <option value="Safety Check">Safety Check</option>
+        </select>
+
+        <label for="taskPriority">Priority:</label>
+        <select id="taskPriority" required>
+            <option value="">Select Priority</option>
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+        </select>
+
+        <label for="taskStatus">Task Status:</label>
+        <select id="taskStatus" required>
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+        </select>
+
+        <button type="submit" id="saveTaskButton">
+            Add Task
+        </button>
+
+        <button type="button" id="cancelEditButton" hidden>
+            Cancel Edit
+        </button>
+    </form>
+
+    <!-- Display Tasks -->
+    <div class="task-list-section">
+        <h3>Industrial Task Records</h3>
+
+        <ul id="taskList"></ul>
+
+        <p id="emptyTaskMessage">
+            No tasks available. Add a new task.
+        </p>
+    </div>
+
+    <!-- Task Summary -->
+    <div class="task-summary">
+        <h3>Task Summary</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Task Status</th>
+                    <th>Total Tasks</th>
+                </tr>
+            </thead>
+
+            <tbody id="taskSummaryBody"></tbody>
+        </table>
+    </div>
+
+    <p id="taskMessage" aria-live="polite"></p>
+</section>
+
+
+        <!-- TECHNOLOGIES SECTION -->
+        <section id="technologies">
+
+            <h2>Technologies Used</h2>
+
+            <div class="table-container">
+                <table>
+
+                    <tr>
+                        <th>Technology</th>
+                        <th>Description</th>
+                        <th>Applications</th>
+                    </tr>
+
+                    <tr>
+                        <td>PLC</td>
+                        <td>Programmable Logic Controller</td>
+                        <td>Machine Control and Manufacturing</td>
+                    </tr>
+
+                    <tr>
+                        <td>Robotics</td>
+                        <td>Automated Industrial Robots</td>
+                        <td>Welding and Material Handling</td>
+                    </tr>
+
+                    <tr>
+                        <td>Industrial IoT</td>
+                        <td>Internet-connected Devices</td>
+                        <td>Monitoring and Data Analysis</td>
+                    </tr>
+
+                    <tr>
+                        <td>SCADA</td>
+                        <td>Supervisory Control and Data Acquisition</td>
+                        <td>Industrial Process Monitoring</td>
+                    </tr>
+
+                </table>
+            </div>
+
+        </section>
+
+        <!-- PROCESS SECTION -->
+        <section id="process">
+
+            <h2>Our Automation Process</h2>
+
+            <ol class="process-list">
+                <li>Understanding customer requirements</li>
+                <li>Designing the automation system</li>
+                <li>Selecting hardware and software</li>
+                <li>Installing PLCs, robots and sensors</li>
+                <li>Programming and system integration</li>
+                <li>Testing and quality verification</li>
+                <li>Maintenance and technical support</li>
+            </ol>
+
+        </section>
+
+        <!-- PRODUCTS SECTION -->
+        <section id="products">
+
+            <h2>Our Products and Technologies</h2>
+
+            <div class="container">
+
+                <article class="card product-card">
+
+                    <h3>Programmable Logic Controller</h3>
+
+                    <figure>
+                        <img src="plc.png"
+                             alt="Programmable Logic Controller">
+                        <figcaption>PLC Controller</figcaption>
+                    </figure>
+
+                    <p>
+                        PLCs automate industrial machines and processes.
+                    </p>
+
+                </article>
+
+                <article class="card product-card">
+
+                    <h3>Industrial Robot</h3>
+
+                    <figure>
+                        <img src="robot.png"
+                             alt="Industrial robotic arm">
+                        <figcaption>Industrial Robotic Arm</figcaption>
+                    </figure>
+
+                    <p>
+                        Robots perform repetitive industrial operations.
+                    </p>
+
+                </article>
+
+                <article class="card product-card">
+
+                    <h3>Industrial IoT Sensors</h3>
+
+                    <figure>
+                        <img src="iot.png"
+                             alt="Industrial IoT sensors">
+                        <figcaption>Industrial IoT Sensors</figcaption>
+                    </figure>
+
+                    <p>
+                        IoT sensors collect real-time machine data.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+        <details>
+            <summary>View PLC Applications</summary>
+        
+            <ul>
+                <li>Automated machine control</li>
+                <li>Production line monitoring</li>
+                <li>Fault detection</li>
+                <li>Process control</li>
+            </ul>
+        </details>
+        <!-- INDUSTRIAL AUTOMATION TOGGLE SWITCH -->
+<section id="automation-settings">
+
+    <h2>Industrial Automation Settings</h2>
+
+    <div class="toggle-container">
+
+        <div class="toggle-info">
+            <h3>Automatic Machine Monitoring</h3>
+
+            <p>
+                Enable or disable automatic monitoring
+                of industrial machines and equipment.
+            </p>
+        </div>
+
+        <label class="switch">
+            <input type="checkbox" id="monitoringToggle">
+
+            <span class="slider"></span>
+        </label>
+
+    </div>
+
+    <div id="monitoringStatus" class="monitoring-status">
+        Automatic Machine Monitoring is disabled.
+    </div>
+
+</section>
+
+        <!-- IMAGE GALLERY -->
+        <section id="gallery">
+
+            <h2>Industrial Automation Image Gallery</h2>
+
+            <p>
+                Explore our industrial automation technologies,
+                machinery and smart manufacturing solutions.
+            </p>
+
+            <div class="gallery-grid">
+
+                <figure class="gallery-item">
+                    <img src="gallery-plc.png"
+                         alt="Industrial PLC control panel">
+
+                    <figcaption>
+                        <h3>PLC Control Panel</h3>
+                        <p>Programmable controllers used to automate industrial machines.</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="gallery-robot.png"
+                         alt="Industrial robotic arm working">
+
+                    <figcaption>
+                        <h3>Industrial Robotics</h3>
+                        <p>Robotic arms used for automated manufacturing operations.</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="gallery-iot.png"
+                         alt="Industrial IoT sensors">
+
+                    <figcaption>
+                        <h3>Industrial IoT</h3>
+                        <p>Smart sensors collecting real-time industrial data.</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="gallery-conveyor.png"
+                         alt="Automated conveyor belt">
+
+                    <figcaption>
+                        <h3>Conveyor Automation</h3>
+                        <p>Automated conveyor systems for material transportation.</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="gallery-scada.png"
+                         alt="SCADA monitoring screen">
+
+                    <figcaption>
+                        <h3>SCADA Monitoring</h3>
+                        <p>Centralized monitoring and control of industrial processes.</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="gallery-factory.png"
+                         alt="Modern automated factory">
+
+                    <figcaption>
+                        <h3>Smart Manufacturing</h3>
+                        <p>Integrated automation technologies in modern factories.</p>
+                    </figcaption>
+                </figure>
+
+            </div>
+
+        </section>
+
+        <!-- INTERACTIVE ANIMATION SECTION -->
+
+<section id="interactive">
+
+    <h2>Interactive Industrial Automation Demonstration</h2>
+
+    <p>
+        Explore our industrial automation technologies through
+        interactive buttons and animated information cards.
+    </p>
+
+    <div class="animation-container">
+
+        <!-- PLC INFORMATION CARD -->
+
+        <div class="animation-card">
+
+            <img src="plc.png"
+                 alt="Industrial PLC controller">
+
+            <h3>PLC Automation</h3>
+
+            <p>
+                Programmable Logic Controllers control
+                industrial machines automatically.
+            </p>
+
+            <button class="info-button"
+                    data-target="plc-details">
+                View PLC Details
+            </button>
+
+            <div class="details" id="plc-details">
+
+                <span class="status-label">PLC SYSTEM</span>
+
+                <p>
+                    PLC systems monitor inputs, process
+                    instructions and control industrial outputs.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ROBOTICS INFORMATION CARD -->
+
+        <div class="animation-card">
+
+            <img src="robot.png"
+                 alt="Industrial robotic arm">
+
+            <h3>Robotics Automation</h3>
+
+            <p>
+                Industrial robots perform repetitive
+                manufacturing operations.
+            </p>
+
+            <button class="info-button"
+                    data-target="robot-details">
+                View Robotics Details
+            </button>
+
+            <div class="details" id="robot-details">
+
+                <span class="status-label">ROBOTIC SYSTEM</span>
+
+                <p>
+                    Robotic systems support welding,
+                    assembly and material handling.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- IOT INFORMATION CARD -->
+
+        <div class="animation-card">
+
+            <img src="iot.png"
+                 alt="Industrial IoT sensors">
+
+            <h3>Industrial IoT</h3>
+
+            <p>
+                IoT devices collect and communicate
+                real-time industrial information.
+            </p>
+
+            <button class="info-button"
+                    data-target="iot-details">
+                View IoT Details
+            </button>
+
+            <div class="details" id="iot-details">
+
+                <span class="status-label">IOT SYSTEM</span>
+
+                <p>
+                    Industrial IoT supports remote monitoring,
+                    data collection and predictive maintenance.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- NOTIFICATION BUTTON -->
+
+    <div class="notification-area">
+
+        <h3>System Notification</h3>
+
+        <p>
+            Click the button to display an automation
+            system notification.
+        </p>
+
+        <button id="notifyButton">
+            Show Notification
+        </button>
+
+        <div id="notification" class="notification">
+
+            <span class="notification-icon">✓</span>
+
+            <span id="notificationText">
+                Automation system is ready!
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <!-- CONTENT TOGGLE BUTTON -->
+
+    <div class="toggle-area">
+
+        <h3>Automation Process Information</h3>
+
+        <button id="toggleButton">
+            Show Process Information
+        </button>
+
+        <div id="processDetails" class="process-details">
+
+            <h4>Industrial Automation Process</h4>
+
+            <p>
+                1. Collect machine input data.
+            </p>
+
+            <p>
+                2. Process information using PLC controllers.
+            </p>
+
+            <p>
+                3. Control machines and robotic equipment.
+            </p>
+
+            <p>
+                4. Monitor operations through SCADA systems.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- DYNAMIC INDUSTRIAL INFORMATION SECTION -->
+
+<section id="dynamic-manager">
+
+    <h2>Industrial Information Manager</h2>
+
+    <p>
+        Add, display, modify and remove industrial automation
+        information dynamically without reloading the webpage.
+    </p>
+
+<section id="validated-enquiry">
+    <h2>Industrial Automation Service Enquiry</h2>
+
+    <p>
+        Submit your requirements to enquire about our
+        industrial automation solutions.
+    </p>
+
+    <form id="enquiryForm" novalidate>
+
+        <fieldset>
+            <legend>Client Information</legend>
+
+            <label for="clientName">Full Name:</label>
+            <input
+                type="text"
+                id="clientName"
+                name="clientName"
+                placeholder="Enter your full name"
+                minlength="3"
+                maxlength="50"
+                pattern="[A-Za-z ]{3,50}"
+                required
+            >
+
+            <label for="email">Email Address:</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="example@email.com"
+                required
+            >
+
+            <label for="phone">Contact Number:</label>
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Enter 10-digit number"
+                pattern="[0-9]{10}"
+                required
+            >
+        </fieldset>
+
+        <fieldset>
+            <legend>Service Requirements</legend>
+
+            <label for="service">Select Automation Service:</label>
+            <select id="service" name="service" required>
+                <option value="">-- Select a Service --</option>
+                <option value="PLC Automation">PLC Automation</option>
+                <option value="Industrial Robotics">Industrial Robotics</option>
+                <option value="SCADA Systems">SCADA Systems</option>
+                <option value="IoT Solutions">Industrial IoT Solutions</option>
+                <option value="Process Control">Process Control</option>
+            </select>
+
+            <label for="quantity">Number of Machines:</label>
+            <input
+                type="number"
+                id="quantity"
+                name="quantity"
+                min="1"
+                max="1000"
+                placeholder="Enter number of machines"
+                required
+            >
+
+            <label for="budget">Estimated Budget (₹):</label>
+            <input
+                type="number"
+                id="budget"
+                name="budget"
+                min="1000"
+                max="10000000"
+                placeholder="Enter estimated budget"
+                required
+            >
+
+            <label for="requirements">Project Description:</label>
+            <textarea
+                id="requirements"
+                name="requirements"
+                rows="5"
+                minlength="10"
+                maxlength="500"
+                placeholder="Describe your automation requirements"
+                required
+            ></textarea>
+
+        </fieldset>
+
+        <button type="submit">Submit Enquiry</button>
+        <button type="reset">Clear Form</button>
+
+        <p id="validationMessage" aria-live="polite"></p>
+
+    </form>
+</section>
+
+
+    <!-- INPUT FORM -->
+
+    <div class="manager-form">
+
+        <h3>Enter Industrial Information</h3>
+
+        <label for="infoTitle">Information Title:</label>
+        <input
+            type="text"
+            id="infoTitle"
+            placeholder="Example: PLC Automation"
+        >
+
+        <label for="infoCategory">Technology Category:</label>
+        <input
+            type="text"
+            id="infoCategory"
+            placeholder="Example: PLC, Robotics, SCADA"
+        >
+
+        <label for="infoDescription">Description:</label>
+        <input
+            type="text"
+            id="infoDescription"
+            placeholder="Enter information about the technology"
+        >
+
+        <button type="button" id="saveInfoButton">
+            Add Information
+        </button>
+
+        <span id="formMessage" aria-live="polite"></span>
+
+    </div>
+
+
+    <!-- DISPLAY INFORMATION -->
+
+    <div class="information-display">
+
+        <h3>Available Industrial Information</h3>
+
+        <p id="emptyMessage">
+            No information has been added yet.
+        </p>
+
+        <ul id="informationList">
+            <!-- JavaScript dynamically adds information here -->
+        </ul>
+
+        <p class="record-count">
+            Total Records:
+            <span id="recordCount">0</span>
+        </p>
+
+    </div>
+
+</section>
+
+        <!-- MULTIMEDIA SECTION -->
+        <section id="media">
+
+            <h2>Multimedia Demonstrations</h2>
+
+            <div class="media-container">
+
+                <article class="media-card">
+
+                    <h3>Industrial Automation Audio</h3>
+
+                    <p>Listen to our industrial automation introduction.</p>
+
+                    <audio controls>
+                        <source src="automation.mp3" type="audio/mpeg">
+                        Your browser does not support audio.
+                    </audio>
+
+                </article>
+
+                <article class="media-card">
+
+                    <h3>Industrial Automation Video</h3>
+
+                    <p>Watch our industrial automation demonstration.</p>
+
+                    <video controls>
+                        <source src="automation.mp4" type="video/mp4">
+
+                        <track src="captions.vtt"
+                               kind="captions"
+                               srclang="en"
+                               label="English"
+                               default>
+
+                        Your browser does not support video.
+                    </video>
+
+                </article>
+
+                <article class="media-card">
+
+                    <h3>YouTube Demonstration</h3>
+
+                    <p>Explore industrial automation technologies.</p>
+
+                    <iframe
+                        src="https://www.youtube.com/embed/Dl_Sm3H1tqo"
+                        title="Industrial Automation Demonstration"
+                        allowfullscreen>
+                    </iframe>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- ENQUIRY FORM -->
+        <section id="enquiry">
+
+            <h2>Customer Enquiry Form</h2>
+
+            <form action="#" method="post"
+                  enctype="multipart/form-data">
+
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name"
+                       placeholder="Enter your full name"
+                       minlength="3" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email"
+                       placeholder="Enter your email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password"
+                       name="password" minlength="8" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone"
+                       placeholder="10-digit number"
+                       pattern="[0-9]{10}" required>
+
+                <label for="quantity">Number of Machines:</label>
+                <input type="number" id="quantity" name="quantity"
+                       min="1" max="100" required>
+
+                <label for="date">Preferred Installation Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <p class="form-heading">Customer Type:</p>
+
+                <div class="options">
+
+                    <input type="radio" id="individual"
+                           name="customer" value="Individual" required>
+                    <label for="individual">Individual</label>
+
+                    <input type="radio" id="company"
+                           name="customer" value="Company">
+                    <label for="company">Company</label>
+
+                </div>
+
+                <p class="form-heading">Interested Technologies:</p>
+
+                <div class="options">
+
+                    <input type="checkbox" id="plc"
+                           name="technology" value="PLC">
+                    <label for="plc">PLC Automation</label>
+
+                    <input type="checkbox" id="robotics"
+                           name="technology" value="Robotics">
+                    <label for="robotics">Robotics</label>
+
+                    <input type="checkbox" id="iot"
+                           name="technology" value="IoT">
+                    <label for="iot">Industrial IoT</label>
+
+                    <input type="checkbox" id="scada"
+                           name="technology" value="SCADA">
+                    <label for="scada">SCADA</label>
+
+                </div>
+
+                <label for="service">Select Required Service:</label>
+
+                <select id="service" name="service" required>
+                    <option value="">-- Select a Service --</option>
+                    <option value="PLC">PLC Automation</option>
+                    <option value="Robotics">Robotics Automation</option>
+                    <option value="IoT">Industrial IoT</option>
+                    <option value="SCADA">SCADA Systems</option>
+                </select>
+
+                <label for="message">Describe Your Requirements:</label>
+
+                <textarea id="message" name="message"
+                          rows="5" minlength="10"
+                          placeholder="Enter your requirements..."
+                          required></textarea>
+
+                <label for="file">Upload Project Document:</label>
+
+                <input type="file" id="file" name="document"
+                       accept=".pdf,.doc,.docx">
+
+                <div class="form-buttons">
+
+                    <input type="submit" value="Submit Enquiry">
+                    <input type="reset" value="Reset Form">
+
+                </div>
+
+            </form>
+
+        </section>
+
+<section id="automation-dashboard">
+    <h2>Industrial Automation Data Dashboard</h2>
+
+    <p>
+        Retrieve and monitor sample industrial automation
+        reports using data from an external API.
+    </p>
+
+    <div class="dashboard-controls">
+        <button type="button" id="loadDataButton">
+            Load Automation Data
+        </button>
+
+        <p id="loadingMessage" aria-live="polite">
+            Click the button to retrieve data.
+        </p>
+    </div>
+
+    <div class="table-container">
+        <table id="automationTable">
+            <thead>
+                <tr>
+                    <th>Report ID</th>
+                    <th>Plant ID</th>
+                    <th>Report Title</th>
+                    <th>Report Details</th>
+                </tr>
+            </thead>
+
+            <tbody id="automationTableBody">
+                <tr>
+                    <td colspan="4">
+                        No data available. Click Load Automation Data.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p id="dataStatus" aria-live="polite"></p>
+</section>
+
+
+        <!-- USEFUL LINKS -->
+        <section id="links">
+
+            <h2>Useful Links</h2>
+
+            <ul>
+                <li>
+                    <a href="https://www.siemens.com/"
+                       target="_blank">Siemens Automation</a>
+                </li>
+
+                <li>
+                    <a href="https://www.rockwellautomation.com/"
+                       target="_blank">Rockwell Automation</a>
+                </li>
+
+                <li>
+                    <a href="https://www.abb.com/"
+                       target="_blank">ABB Robotics</a>
+                </li>
+            </ul>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <h3>Industrial Automation Solutions</h3>
+
+        <p>Email: info@automation.com</p>
+        <p>Phone: +91 9876543210</p>
+        <p>Address: Coimbatore, Tamil Nadu, India</p>
+
+        <p>
+            &copy; 2026 Industrial Automation Solutions.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+    <script src="js15.js"></script>
+</body>
+</html>
